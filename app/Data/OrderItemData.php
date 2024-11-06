@@ -5,6 +5,7 @@ namespace App\Data;
 use Spatie\LaravelData\Attributes\Validation\Required;
 use Spatie\LaravelData\Data;
 
+/** @typescript */
 class OrderItemData extends Data
 {
     public function __construct(

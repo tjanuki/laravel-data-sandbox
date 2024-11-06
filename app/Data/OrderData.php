@@ -7,6 +7,7 @@ use Spatie\LaravelData\Attributes\Validation\Required;
 use Spatie\LaravelData\Data;
 use Spatie\LaravelData\DataCollection;
 
+/** @typescript */
 class OrderData extends Data
 {
     public function __construct(

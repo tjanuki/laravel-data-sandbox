@@ -7,7 +7,9 @@ use Spatie\LaravelData\Attributes\Validation\Required;
 use Spatie\LaravelData\Attributes\Validation\StringType;
 use Spatie\LaravelData\Data;
 use Spatie\LaravelData\DataCollection;
+use Spatie\LaravelData\Optional;
 
+/** @typescript */
 class UserData extends Data
 {
     public function __construct(
@@ -27,6 +29,9 @@ class UserData extends Data
 
         #[DataCollectionOf(OrderData::class)]
         public ?DataCollection $orders,
+
+         #[TypeScriptOptional]
+        public ?string $optional = null,
     ) {}
 
     public static function rules(): array
