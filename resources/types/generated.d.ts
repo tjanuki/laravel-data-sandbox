@@ -29,6 +29,6 @@ last_name: string;
 address: App.Data.AddressData;
 contact: App.Data.ContactData;
 orders: any | null;
-optional: string | null;
+optional?: string;
 };
 }
